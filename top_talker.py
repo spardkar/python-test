@@ -10,6 +10,7 @@ total_output = 0
 top_talkers = []
 
 devices = defaultdict(list)
+#file path should be exact
 file_path = "/Users/satishparadkar/Documents/Ansible-REPO/PycharmProjects/pythonProject1/stats.csv"
 with open(file_path, 'r') as fh:
     csv_reader = csv.DictReader(fh)
@@ -33,7 +34,7 @@ with open(file_path, 'r') as fh:
 
 print('Top talkers devices based on input traffic:')
 pprint(sorted(top_talkers, key=lambda x: int(x['input']), reverse=False))
-
+# prints traffic what it has devices dictionary 
 print('\n', 'Total traffic per device:')
 for device, traffic in devices.items():
     print(device, traffic)
