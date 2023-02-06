@@ -10,6 +10,7 @@ total_output = 0
 top_talkers = []
 
 devices = defaultdict(list)
+#file path should be exact
 file_path = "/Users/satishparadkar/Documents/Ansible-REPO/PycharmProjects/pythonProject1/stats.csv"
 with open(file_path, 'r') as fh:
     csv_reader = csv.DictReader(fh)
