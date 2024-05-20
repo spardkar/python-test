@@ -18,6 +18,4 @@ Total traffic on r1 is 540
 r2 [605, 635]
 Total traffic on r2 is 1240
 r3 [905, 625]
-Total traffic on r3 is 1530
-
-Process finished with exit code 0
+Total traffic on r3 is 1530 
